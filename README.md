@@ -1,59 +1,14 @@
 # RsaIdAndPassportGenerator
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.7.
+An open-source utility designed for developers and QA engineers to generate structurally valid South African Identity Numbers and mock passport data for automated testing, form validation, and database seeding.
 
-## Development server
+### Key Features
 
-To start a local development server, run:
+* **SA ID Number Generation:** Generates compliant 13-digit South African ID numbers based on the official specification, incorporating valid birthdates (YYMMDD), gender digits, citizenship status, and the Luhn algorithm checksum.
+* **Passport Data Mocking:** Creates realistic passport metadata, including matching document numbers, issue/expiry dates, and machine-readable zone (MRZ) formats for comprehensive testing workflows.
+* **Validation Support:** Includes built-in algorithms to validate existing ID numbers and ensure they pass checksum and date-logic checks.
+* **Developer Friendly:** Lightweight and easily integrated into automated test suites, CI/CD pipelines, or local development environments.
 
-```bash
-ng serve
-```
+### Disclaimer
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This tool is strictly intended for software development, testing, and quality assurance purposes. Generated identification numbers and data are synthetic and should not be used for fraudulent activities, identity theft, or bypassing real-world identity verification systems.
